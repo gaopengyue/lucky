@@ -1,0 +1,8 @@
+<view class='home'>
+  <view class='nav'>
+    <navigator url='/pages/birthday/birthday'>八字合婚</navigator>
+    <navigator url='/pages/vow/vow'>许愿池</navigator>
+    <navigator url='/pages/finger/finger'>星座屋</navigator>
+  </view>
+  <view class='btn'>求签</view>
+</view>

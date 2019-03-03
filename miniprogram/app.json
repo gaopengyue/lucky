@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/birthday/birthday",
+    "pages/vow/vow",
+    "pages/finger/finger",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationBarTitleText": "桃花上上签",
+    "navigationStyle": "custom"
+  }
+}

@@ -1,0 +1,5 @@
+<!--components/home.wxml-->
+<text>components/home.wxml</text>
+<view>1</view>
+<view>2</view>
+<view bindtap='goHome'>返回首页</view>
