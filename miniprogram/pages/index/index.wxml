@@ -1,8 +1,24 @@
 <view class='home'>
+  <image class='logo fade' src='/images/logo.png' mode='widthFix'></image>
+  <image class='bg' src='/images/bg.jpg'></image>
+  <image class='left1 fade' src='/images/top_left.png'></image>
+  <image class='left2 fade' src='/images/bottom_left.png'></image>
+  <image class='right fade' src='/images/right.png'></image>
+  <image class='top fade' src='/images/top.png' mode='widthFix'></image>
   <view class='nav'>
-    <navigator url='/pages/birthday/birthday'>八字合婚</navigator>
-    <navigator url='/pages/vow/vow'>许愿池</navigator>
-    <navigator url='/pages/finger/finger'>星座屋</navigator>
+    <navigator url='/pages/birthday/birthday' hover-class='none'>
+      <image src='/images/tab1.png'></image>
+      <view>八字合婚</view>
+    </navigator>
+    <navigator url='/pages/vow/vow' hover-class='none'>
+      <image src='/images/tab2.png'></image>
+      <view>许愿池</view>
+    </navigator>
+    <navigator url='/pages/finger/finger' hover-class='none'>
+      <image src='/images/tab3.png'></image>
+      <view>星座屋</view>
+    </navigator>
   </view>
   <view class='btn'>求签</view>
+
 </view>

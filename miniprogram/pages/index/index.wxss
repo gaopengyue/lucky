@@ -1,12 +1,88 @@
+.home {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.home > image {
+  position: absolute;
+}
+.fade {
+  opacity: 0;
+  animation: fadeIn 1s forwards ease;
+}
+.home .logo {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 472rpx;
+  z-index: 2;
+  animation-delay: .6s;
+}
+.home .bg {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 1334rpx;
+  z-index: 1;
+  opacity: .3 !important;
+}
+.home .left1 {
+  top: 0;
+  left: 0;
+  width: 123rpx;
+  height: 182rpx;
+  z-index: 2;
+  animation-delay: .2s;
+}
+.home .left2 {
+  bottom: 0;
+  left: 0;
+  width: 250rpx;
+  height: 471rpx;
+  z-index: 2;
+  animation-delay: .4s;
+}
+.home .right {
+  right: 0;
+  bottom: -10rpx;
+  width: 359rpx;
+  z-index: 2;
+  height: 780rpx;
+  animation-delay: .6s;
+}
+.home .top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
 .nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 200rpx;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  color: #333;
+  font-size: 30rpx;
+}
+.nav navigator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.nav image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
 }
 .btn {
   position: absolute;
-  top: 50%;
+  bottom: 400rpx;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translateX(-50%);
+  z-index: 4;
 }
