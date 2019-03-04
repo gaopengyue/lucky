@@ -1,1 +1,36 @@
 /* miniprogram/pages/birthday/birthday.wxss */
+.birthday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+}
+.birthday view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.birthday input {
+  text-align: center;
+}
+.birthday image {
+  width: 100rpx;
+  height: 100rpx;
+}
+.btm {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  width: 300rpx;
+  height: 300rpx;
+  background: radial-gradient(rgba(255, 121, 112, .5), rgba(255, 121, 112, .1), rgba(255, 121, 112, 0.1));
+  border-radius: 50%;
+  text-align: center;
+  line-height: 300rpx;
+  margin-top: 130rpx;
+  font-weight: bold;
+  font-size: 60rpx;
+  color: #333;
+}

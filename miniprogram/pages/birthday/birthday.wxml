@@ -1,3 +1,22 @@
 <!--miniprogram/pages/birthday/birthday.wxml-->
-<text>miniprogram/pages/birthday/birthday.wxml</text>
+<view class='birthday'>
+  <view>
+    <image src='/images/men.png'></image>
+    <input placeholder='男神姓名'></input>
+    <picker>男神生日</picker>
+  </view>
+  <view>
+    <image src='/images/women.png'></image>
+    <input placeholder='女神姓名'></input>
+    <picker>女神生日</picker>
+  </view>
+</view>
+<view class='btm'>
+  <view class='btn' bindtap='birthday'>合婚</view>
+</view>
+
+
+
+
+
 <goHome></goHome>

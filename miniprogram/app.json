@@ -4,7 +4,8 @@
     "pages/birthday/birthday",
     "pages/vow/vow",
     "pages/finger/finger",
-    "pages/result/result"
+    "pages/result/result",
+    "pages/birthResult/birthResult"
   ],
   "window": {
     "navigationBarTitleText": "桃花上上签",

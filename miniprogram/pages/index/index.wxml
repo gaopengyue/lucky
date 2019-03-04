@@ -19,6 +19,10 @@
       <view>星座屋</view>
     </navigator>
   </view>
-  <view class='btn'>求签</view>
+  <view class='btm'>
+    <image src='/images/qian.png' mode='widthFix'></image>
+    <view class='btn'>求签</view>
+  </view>
+  
 
 </view>
