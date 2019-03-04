@@ -1,3 +1,23 @@
 <!--miniprogram/pages/birthResult/birthResult.wxml-->
-<text>miniprogram/pages/birthResult/birthResult.wxml</text>
+<view>
+  <view class='top'>{{res.marriageType || '延年婚'}}</view>
+  <view class='info'>
+    <view>
+      <view>{{men}}</view>
+      <view>{{res.menZodiac}}</view>
+      <view>{{res.menLunar}}</view>
+      <view>{{res.menLunarTime}}</view>
+      <view>{{res.menMarriage}}</view>
+    </view>
+    <view>
+      <view>{{women}}</view>
+      <view>{{res.wonmanZodiac}}</view>
+      <view>{{res.womanLunar}}</view>
+      <view>{{res.wonmanLuarTime}}</view>
+      <view>{{res.wonmanMarriage}}</view>
+    </view>
+  </view>
+
+  <button open-type='share'>发给 TA 看</button>
+</view>
 <goHome></goHome>

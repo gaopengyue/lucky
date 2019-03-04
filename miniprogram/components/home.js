@@ -20,7 +20,7 @@ Component({
   methods: {
     goHome() {
       wx.navigateBack({
-        delta: 10
+        delta: 1
       })
     }
   }
