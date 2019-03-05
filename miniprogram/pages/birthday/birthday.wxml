@@ -3,20 +3,37 @@
   <view>
     <image src='/images/men.png'></image>
     <input placeholder='姓名' data-type="men" bindinput='input' maxlength='10'></input>
-    <picker value="1995-01-01" data-type="men" mode='date' bindchange="changeDate">{{menDate || '选择生日'}}</picker>
+    <picker value="1996-01-01" data-type="men" mode='date' bindchange="changeDate">{{menDate || '选择生日'}}</picker>
   </view>
+  <view class='btn' bindtap='birthday'>合婚</view>
   <view>
     <image src='/images/women.png'></image>
     <input placeholder='姓名' data-type="women" bindinput='input' maxlength='10'></input>
-    <picker value="1995-01-01" data-type="women" mode='date' bindchange="changeDate">{{womenDate || '选择生日'}}</picker>
+    <picker value="1996-01-01" data-type="women" mode='date' bindchange="changeDate">{{womenDate || '选择生日'}}</picker>
   </view>
 </view>
-<view class='btm'>
-  <view class='btn' bindtap='birthday'>合婚</view>
+
+<view class='result' wx:if="{{res}}">
+  <view class='top'>{{res.marriageType || '延年婚'}}</view>
+  <view class='info'>
+    <view>
+      <view>{{menName}}</view>
+      <view>{{res.menZodiac}}</view>
+      <view>{{res.menLunar}}</view>
+      <view>{{res.menLunarTime}}</view>
+      <view>{{res.menMarriage}}</view>
+    </view>
+    <view>
+      <view>{{womenName}}</view>
+      <view>{{res.wonmanZodiac}}</view>
+      <view>{{res.womanLunar}}</view>
+      <view>{{res.wonmanLuarTime}}</view>
+      <view>{{res.wonmanMarriage}}</view>
+    </view>
+  </view>
+
+  <button open-type='share'>发给 TA 看</button>
 </view>
-
-
-
 
 
 <goHome></goHome>

@@ -8,7 +8,8 @@ Page({
     menName: '',
     womenName: '',
     menDate: '',
-    womenDate: ''
+    womenDate: '',
+    res: null
   },
 
   /**
@@ -33,9 +34,15 @@ Page({
     
   },
   submit() {
-    let url = '/pages/birthResult/birthResult'
-    wx.navigateTo({
-      url: `${url}?m=${this.data.menDate}&w=${this.data.womenDate}&men=${this.data.menName}&women=${this.data.womenName}`,
+    wx.showLoading({
+      title: '配对中…',
+    })
+    wx.request({
+      url: `https://apicloud.mob.com/appstore/marriage/day?key=2a48d2d03c920&menDate=${this.data.menDate}&menHour=10&womanDate=${this.data.womenDate}&womanHour=10`,
+      success: data => {
+        wx.hideLoading()
+        this.setData({ res: data.data.result })
+      }
     })
   },
   input(e) {

@@ -6,6 +6,10 @@
   <image class='right fade' src='/images/right.png'></image>
   <image class='top fade' src='/images/top.png' mode='widthFix'></image>
   <view class='nav'>
+    <navigator url='/pages/finger/finger' hover-class='none'>
+      <image src='/images/tab3_1.png'></image>
+      <view>星座屋</view>
+    </navigator>
     <navigator url='/pages/birthday/birthday' hover-class='none'>
       <image src='/images/tab1.png'></image>
       <view>八字合婚</view>
@@ -14,15 +18,15 @@
       <image src='/images/tab2_1.png'></image>
       <view>许愿池</view>
     </navigator>
-    <navigator url='/pages/finger/finger' hover-class='none'>
-      <image src='/images/tab3_1.png'></image>
-      <view>星座屋</view>
-    </navigator>
   </view>
   <view class='btm'>
-    <image src='/images/qian.png' mode='widthFix'></image>
-    <view class='btn'>求签</view>
+    <image class="{{shake ? 'shake' : ''}}" src='/images/qian.png' mode='widthFix'></image>
+    <view class='btn' bindtap='beg'>求签</view>
   </view>
   
-
+  <view class='modal' bindtap='hideModal' wx:if="{{modal}}">
+    <view class="{{modal ? 'show' : ''}}" bindtap='getRes'>
+      领取你的上上签
+    </view>
+  </view>
 </view>

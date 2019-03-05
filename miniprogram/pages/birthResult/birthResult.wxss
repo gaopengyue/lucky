@@ -1,6 +1,0 @@
-/* miniprogram/pages/birthResult/birthResult.wxss */
-.top {
-  font-size: 80rpx;
-  text-align: center;
-  padding: 30rpx 0;
-}

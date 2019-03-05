@@ -93,6 +93,10 @@
 }
 .btm image {
   width: 100rpx;
+  transform-origin: bottom;
+}
+.btm .shake {
+  animation: shake .3s infinite;
 }
 .btn {
   width: 300rpx;
@@ -105,4 +109,31 @@
   font-weight: bold;
   font-size: 60rpx;
   color: #333;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+}
+.modal > view {
+  transform: scale(0)
+}
+.modal .show {
+  animation: scaleIn .6s .2s ease forwards;
+}
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0)
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1)
+  }
 }
