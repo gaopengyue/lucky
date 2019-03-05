@@ -2,13 +2,13 @@
 <view class='birthday'>
   <view>
     <image src='/images/men.png'></image>
-    <input placeholder='男神姓名'></input>
-    <picker>男神生日</picker>
+    <input placeholder='姓名' data-type="men" bindinput='input' maxlength='10'></input>
+    <picker value="1995-01-01" data-type="men" mode='date' bindchange="changeDate">{{menDate || '选择生日'}}</picker>
   </view>
   <view>
     <image src='/images/women.png'></image>
-    <input placeholder='女神姓名'></input>
-    <picker>女神生日</picker>
+    <input placeholder='姓名' data-type="women" bindinput='input' maxlength='10'></input>
+    <picker value="1995-01-01" data-type="women" mode='date' bindchange="changeDate">{{womenDate || '选择生日'}}</picker>
   </view>
 </view>
 <view class='btm'>
