@@ -1,1 +1,11 @@
 /* components/home.wxss */
+.go-home {
+  position: absolute;
+  top: 3%;
+  left: 0;
+  padding: 28rpx;
+}
+.go-home image {
+  width: 40rpx;
+  height: 40rpx;
+}

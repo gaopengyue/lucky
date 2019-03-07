@@ -1,2 +1,4 @@
 <!--components/home.wxml-->
-<view bindtap='goHome'>返回</view>
+<view class='go-home' bindtap='goHome'>
+  <image src='/images/back.png'></image>
+</view>

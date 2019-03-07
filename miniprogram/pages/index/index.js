@@ -24,6 +24,9 @@ Page({
   },
   getRes() {
     console.log('领取上上签')
+    wx.navigateTo({
+      url: '/pages/result/result',
+    })
   }
 
 })

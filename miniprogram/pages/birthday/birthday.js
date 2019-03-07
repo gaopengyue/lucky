@@ -18,6 +18,12 @@ Page({
   onLoad: function (options) {
 
   },
+  onShareAppMessage() {
+    return {
+      title:'快看，咱俩的八字合婚！',
+      path: '/pages/index/index'
+    }
+  },
 
   birthday() {
     if (!this.data.menName) {

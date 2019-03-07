@@ -6,17 +6,12 @@
 .home > image {
   position: absolute;
 }
-.fade {
-  opacity: 0;
-  animation: fadeIn 1s forwards ease;
-}
 .home .logo {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
   width: 472rpx;
   z-index: 2;
-  animation-delay: .6s;
 }
 .home .bg {
   width: 100%;
@@ -32,7 +27,6 @@
   width: 123rpx;
   height: 182rpx;
   z-index: 2;
-  animation-delay: .2s;
 }
 .home .left2 {
   bottom: 0;
@@ -40,7 +34,6 @@
   width: 250rpx;
   height: 471rpx;
   z-index: 2;
-  animation-delay: .4s;
 }
 .home .right {
   right: 0;
@@ -48,7 +41,6 @@
   width: 359rpx;
   z-index: 2;
   height: 780rpx;
-  animation-delay: .6s;
 }
 .home .top {
   top: 0;
