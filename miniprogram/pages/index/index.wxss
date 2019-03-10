@@ -71,10 +71,13 @@
   width: 80rpx;
   height: 80rpx;
   margin-bottom: 10rpx;
+  background-color: rgba(255, 121, 112, 1);
+  border-radius: 50%;
+  padding: 20rpx;
 }
 .btm {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
@@ -92,15 +95,16 @@
 }
 .btn {
   width: 300rpx;
-  height: 300rpx;
-  background: radial-gradient(rgba(255, 121, 112, .5), rgba(255, 121, 112, .1), rgba(255, 121, 112, 0.1));
-  border-radius: 50%;
+  /* height: 300rpx; */
+  /* background: radial-gradient(rgba(255, 121, 112, .5), rgba(255, 121, 112, .1), rgba(255, 121, 112, 0.1)); */
+  border-radius: 6rpx;
   text-align: center;
-  line-height: 300rpx;
-  margin-top: 30rpx;
+  line-height: 80rpx;
+  margin-top: 40rpx;
   font-weight: bold;
-  font-size: 60rpx;
-  color: #333;
+  font-size: 50rpx;
+  color: #ff7970;
+  border: 1rpx solid #ff7970;
 }
 .modal {
   position: fixed;
@@ -112,12 +116,20 @@
   align-items: center;
   justify-content: center;
   z-index: 9;
+  background-color: rgba(0,0,0,.5)
 }
 .modal > view {
   transform: scale(0)
 }
 .modal .show {
   animation: scaleIn .6s .2s ease forwards;
+}
+.qian {
+  width: 100rpx;
+  height: 800rpx;
+  background-color: #ff7970;
+  color: #fff;
+  border-radius: 8rpx;
 }
 @keyframes scaleIn {
   0% {
