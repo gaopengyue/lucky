@@ -24,8 +24,8 @@
     <view class='btn' bindtap='beg'>求签</view>
   </view>
   
-  <view class='modal' bindtap='hideModal' wx:if="{{!modal}}">
-    <view class="{{!modal ? 'show' : ''}}" bindtap='getRes'>
+  <view class='modal' bindtap='hideModal' wx:if="{{modal}}">
+    <view class="{{modal ? 'show' : ''}}" bindtap='getRes'>
       <view class='qian'>
         <view class='sort'>第一签</view>
         <view class='type'>上上签</view>
