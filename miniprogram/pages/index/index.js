@@ -4,7 +4,8 @@ const app = getApp()
 Page({
   data: {
     shake: false,
-    modal: false
+    modal: false,
+    docItem: null
   },
 
   onLoad() {
@@ -13,20 +14,31 @@ Page({
   beg() {
     if (this.data.shake || this.data.modal) return
     this.setData({ shake: true })
-    setTimeout(() => {
-      this.setData({ shake: false, modal: true })
-    }, 1500)
+    wx.cloud.callFunction({
+      name: 'docList'
+    }).then(res => {
+      let data = res.result.data
+      let random = Math.floor(Math.random() * data.length)
+      let docItem = data[random] ? data[random] : data[random - 1]
+      
+      setTimeout(() => {
+        this.setData({ shake: false, modal: true, docItem })
+      }, 1000)
+      wx.setStorage({
+        key: 'docItem',
+        data: docItem,
+      })
+    })
   },
   hideModal() {
     this.setData({ modal: false })
-    // 跳转到结果页
-
   },
-  getRes() {
-    console.log('领取上上签')
+  getRes(e) {
+    let docId = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: '/pages/result/result',
+      url: `/pages/result/result?id=${docId}`,
     })
+    this.hideModal()
   }
 
 })

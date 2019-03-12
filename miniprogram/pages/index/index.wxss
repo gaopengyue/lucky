@@ -135,11 +135,17 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 18rpx solid rgb(255, 230, 0);
+  border: 1rpx solid rgb(255, 230, 0);
   
 }
 .qian .sort {
   font-size: 28rpx;
+  font-weight: bold;
+}
+.qian .sort view:last-child {
+  font-size: 24rpx;
+  font-weight: normal;
+  padding-top: 10rpx;
 }
 .qian .type {
   font-size: 80rpx;

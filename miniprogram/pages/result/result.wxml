@@ -1,2 +1,12 @@
 <!--miniprogram/pages/result/result.wxml-->
-<text>miniprogram/pages/result/result.wxml</text>
+<goHome></goHome>
+<view>{{docItem.sort}}</view>
+<view>{{docItem.title}}</view>
+<view>{{docItem.type}}</view>
+<view>{{docItem.desc}}</view>
+<view>{{docItem.descDetial}}</view>
+<view wx:for="{{docItem.descList}}">
+  <view>{{index}}</view>
+  <view>{{item}}</view>
+</view>
+<view wx:for="{{docItem.case}}">{{item}}</view>

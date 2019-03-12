@@ -28,7 +28,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -48,6 +48,13 @@
 					"name": "八字结果",
 					"pathName": "pages/birthResult/birthResult",
 					"query": "m=1990-10-14&w=1989-05-27&men=高鹏岳&women=蔡玥",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "抽签结果",
+					"pathName": "pages/result/result",
+					"query": "id=5c845b40d0f2f9fabc6298c1",
 					"scene": null
 				}
 			]
