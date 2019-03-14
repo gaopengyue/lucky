@@ -1,12 +1,17 @@
 <!--miniprogram/pages/result/result.wxml-->
 <goHome></goHome>
-<view>{{docItem.sort}}</view>
-<view>{{docItem.title}}</view>
-<view>{{docItem.type}}</view>
-<view>{{docItem.desc}}</view>
-<view>{{docItem.descDetial}}</view>
-<view wx:for="{{docItem.descList}}">
-  <view>{{index}}</view>
-  <view>{{item}}</view>
+<view class='result'>
+  <view>{{docItem.sort}}</view>
+  <view>{{docItem.title}}</view>
+  <view>{{docItem.type}}</view>
+  <view class='title'>解析</view>
+  <view>{{docItem.desc}}</view>
+  <view>{{docItem.descDetial}}</view>
+  <view wx:for="{{docItem.descList}}">
+    <view class='title'>{{index}}</view>
+    <view>{{item}}</view>
+  </view>
+  <view class='title'>真实案例</view>
+  <view wx:for="{{caseList}}">{{item}}</view>
 </view>
-<view wx:for="{{docItem.case}}">{{item}}</view>
+

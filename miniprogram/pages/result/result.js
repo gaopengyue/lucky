@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    docItem: null
+    docItem: null,
+    caseList: null
   },
 
   /**
@@ -15,10 +16,14 @@ Page({
     wx.getStorage({
       key: 'docItem',
       success: res => {
-        this.setData({
-          docItem: res.data
+        let list = []
+        res.data.case.forEach(item => {
+          list = list.concat(item.split(/\n/g))
         })
-        console.log(res.data)
+        this.setData({
+          docItem: res.data,
+          caseList: list
+        })
       }
     })
   },
