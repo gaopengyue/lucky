@@ -57,6 +57,7 @@
   left: 0;
   right: 0;
   z-index: 4;
+  padding: 0 50rpx;
 }
 .nav navigator {
   display: flex;
@@ -125,7 +126,7 @@
   animation: scaleIn .6s .2s ease forwards;
 }
 .qian {
-  width: 100rpx;
+  width: 130rpx;
   height: 800rpx;
   background-color: #ff7970;
   color: #fff;

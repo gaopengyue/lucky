@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 25%;
+  padding-top: 13%;
 }
 .birthday view {
   display: flex;

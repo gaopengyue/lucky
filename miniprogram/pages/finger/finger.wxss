@@ -1,1 +1,24 @@
-/* miniprogram/pages/finger/finger.wxss */
+.content {
+  padding: 28rpx;
+}
+.item {
+  padding: 10rpx 0;
+  border-bottom: 1rpx solid #efefef;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.item image {
+  width: 180rpx;
+  height: 180rpx;
+  padding-right: 28rpx;
+}
+.name {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+.date {
+  font-size: 28rpx;
+  color: #666;
+  padding-top: 10rpx;
+}

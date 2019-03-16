@@ -1,3 +1,9 @@
-<!--miniprogram/pages/finger/finger.wxml-->
-<text>miniprogram/pages/finger/finger.wxml</text>
-<goHome></goHome>
+<view class='content'>
+  <view class='item'>
+    <image src="/images/love.png"></image>
+    <view>
+      <view class='name'>白羊座</view>
+      <view class='date'>03.21-4.19</view>
+    </view>
+  </view>
+</view>

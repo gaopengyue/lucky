@@ -1,17 +1,21 @@
 <!--miniprogram/pages/result/result.wxml-->
-<goHome></goHome>
 <view class='result'>
-  <view>{{docItem.sort}}</view>
-  <view>{{docItem.title}}</view>
-  <view>{{docItem.type}}</view>
+  <view class='head'>{{docItem.sort}} {{docItem.type}}</view>
+  <view class='sub-head'>{{docItem.title}}</view>
   <view class='title'>解析</view>
-  <view>{{docItem.desc}}</view>
-  <view>{{docItem.descDetial}}</view>
+  <view class='content'>
+    <view>{{docItem.desc}}</view>
+    <view>{{docItem.descDetial}}</view>
+  </view>
   <view wx:for="{{docItem.descList}}">
     <view class='title'>{{index}}</view>
-    <view>{{item}}</view>
+    <view class='content'>{{item}}</view>
   </view>
   <view class='title'>真实案例</view>
-  <view wx:for="{{caseList}}">{{item}}</view>
+  <view wx:for="{{caseList}}">
+    <view class='case-title' wx:if="{{item.title}}">问题：{{item.title}}</view>
+    <view wx:if="{{!item.title}}" class='case-content-title'>大师解答：</view>
+    <view class='case-content' wx:for="{{item.content}}">{{item}}</view>
+  </view>
 </view>
 

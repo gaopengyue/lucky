@@ -36,7 +36,3 @@
   </view>
   <button class='share' open-type='share'>发给 TA 看</button>
 </view>
-
-
-
-<goHome></goHome>

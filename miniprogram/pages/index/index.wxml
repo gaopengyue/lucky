@@ -6,13 +6,13 @@
   <image class='right fade' src='/images/right.png'></image>
   <image class='top fade' src='/images/top.png' mode='widthFix'></image>
   <view class='nav'>
-    <!-- <navigator url='/pages/finger/finger' hover-class='none'>
-      <image src='/images/tab3_1.png'></image>
-      <view>星座屋</view>
-    </navigator> -->
     <navigator url='/pages/birthday/birthday' hover-class='none'>
       <image src='/images/tab1.png'></image>
       <view>八字合婚</view>
+    </navigator>
+    <navigator url='/pages/finger/finger' hover-class='none'>
+      <image src='/images/tab2.png'></image>
+      <view>星座物语</view>
     </navigator>
     <!-- <navigator url='/pages/vow/vow' hover-class='none'>
       <image src='/images/tab2_1.png'></image>

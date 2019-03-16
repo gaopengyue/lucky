@@ -1,5 +1,4 @@
 {
-  "usingComponents": {
-    "goHome": "/components/home"
-  }
+  "usingComponents": {},
+  "navigationBarTitleText": "星座物语"
 }
