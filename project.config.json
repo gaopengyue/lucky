@@ -11,6 +11,8 @@
 	"appid": "wx2a6fbc5d4e092cf1",
 	"projectname": "lucky",
 	"libVersion": "2.2.5",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

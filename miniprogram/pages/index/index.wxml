@@ -10,7 +10,7 @@
       <image src='/images/tab1.png'></image>
       <view>八字合婚</view>
     </navigator>
-    <navigator url='/pages/finger/finger' hover-class='none'>
+    <navigator app-id='wxe054820a2f4553c9' hover-class='none' target='miniProgram'>
       <image src='/images/tab2.png'></image>
       <view>星座物语</view>
     </navigator>

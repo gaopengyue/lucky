@@ -10,5 +10,9 @@
     "navigationBarTitleText": "",
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxe054820a2f4553c9"
+  ],
+  "sitemapLocation": "sitemap.json"
 }
